@@ -2,16 +2,16 @@ var uploadres = [];
 var selectedData = [];
 var abc = {};
 var phonecatControllers = angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ngDialog', 'angularFileUpload', 'ui.select', 'ngSanitize']);
-window.uploadUrl = 'http://104.197.23.70/user/uploadfile';
+// window.uploadUrl = 'http://104.197.23.70/user/uploadfile';
 //window.uploadUrl = 'http://192.168.2.22:1337/user/uploadfile';
-//window.uploadUrl = 'http://localhost:1337/user/uploadfile';
+window.uploadUrl = 'http://localhost:1337/user/uploadfile';
 phonecatControllers.controller('home', function($scope, TemplateService, NavigationService, $routeParams, $location) {
   $scope.template = TemplateService;
   $scope.menutitle = NavigationService.makeactive("Dashboard");
   TemplateService.title = $scope.menutitle;
   TemplateService.submenu = "";
   TemplateService.content = "views/dashboard.html";
-  TemplateService.list = 1;
+  TemplateService.list = 2;
   $scope.navigation = NavigationService.getnav();
   //  NavigationService.countUser(function(data, status) {
   //    $scope.user = data;

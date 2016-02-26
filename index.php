@@ -26,8 +26,7 @@
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/lodash.min.js"></script>
     <script src="bower_components/angular-ui-select/dist/select.js"></script>
-
-
+    <script type="text/javascript" src="bower_components/angular-ui-sortable/sortable.js"></script>
 
     <script src="lib/js/jstorage.js"></script>
     <script src="js/app.js"></script>

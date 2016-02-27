@@ -232,10 +232,8 @@ phonecatControllers.controller('headerctrl', function($scope, TemplateService, N
                         console.log($scope.images);
                         imagejstupld = "";
                         if (arrLength == $scope.images.length) {
-                            if ($scope.images.length == 1) {
-                                $scope.images = $scope.images[0];
-                            }
                             callback($scope.images);
+                            $scope.images = [];
                         }
                     }
                 });
